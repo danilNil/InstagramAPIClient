@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lma-qO-vCX">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Get Most Liked Photo">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getMostLikedPhoto:" destination="2" eventType="touchUpInside" id="fUd-z7-QQb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgH-cl-Ro1">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Get Avatar">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAva:" destination="2" eventType="touchUpInside" id="jJG-fr-poo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3R-Tx-vj0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="0QO-Fb-g0e"/>
+                                    <constraint firstAttribute="width" constant="140" id="SyY-ay-dVg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVW-bY-F3C">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="NQG-Qz-BuT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Num of likes:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILz-47-wbb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hek-Tx-9yu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="0xW-8C-USo"/>
+                                    <constraint firstAttribute="width" constant="72" id="xUr-VJ-MlI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiE-GL-AEl">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="2" eventType="touchUpInside" id="wMZ-38-xic"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lma-qO-vCX" firstAttribute="leading" secondItem="ILz-47-wbb" secondAttribute="leading" type="default" id="0Kc-Ig-U3e"/>
+                            <constraint firstItem="DiE-GL-AEl" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="3my-1h-8XS"/>
+                            <constraint firstItem="UVW-bY-F3C" firstAttribute="top" secondItem="CgH-cl-Ro1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5CS-au-sZJ"/>
+                            <constraint firstItem="DiE-GL-AEl" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="5P8-Kh-cdA"/>
+                            <constraint firstItem="lma-qO-vCX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Czc-5F-M6K"/>
+                            <constraint firstItem="Hek-Tx-9yu" firstAttribute="leading" secondItem="ILz-47-wbb" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="EMK-RK-xza"/>
+                            <constraint firstItem="lma-qO-vCX" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Gs3-NV-bV7"/>
+                            <constraint firstItem="Hek-Tx-9yu" firstAttribute="centerY" secondItem="ILz-47-wbb" secondAttribute="centerY" type="default" id="Tv6-DV-J0L"/>
+                            <constraint firstItem="lma-qO-vCX" firstAttribute="centerX" secondItem="O3R-Tx-vj0" secondAttribute="centerX" type="default" id="c0D-kr-Dvv"/>
+                            <constraint firstItem="CgH-cl-Ro1" firstAttribute="top" secondItem="Hek-Tx-9yu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gEj-Iu-xnq"/>
+                            <constraint firstAttribute="bottom" secondItem="UVW-bY-F3C" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="jdv-N2-zV1"/>
+                            <constraint firstItem="UVW-bY-F3C" firstAttribute="trailing" secondItem="O3R-Tx-vj0" secondAttribute="trailing" type="default" id="jox-9q-YeK"/>
+                            <constraint firstItem="CgH-cl-Ro1" firstAttribute="centerX" secondItem="O3R-Tx-vj0" secondAttribute="centerX" type="default" id="maK-Ah-d3c"/>
+                            <constraint firstItem="UVW-bY-F3C" firstAttribute="leading" secondItem="O3R-Tx-vj0" secondAttribute="leading" type="default" id="tNH-ee-Poq"/>
+                            <constraint firstItem="O3R-Tx-vj0" firstAttribute="top" secondItem="lma-qO-vCX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="vBh-xE-KWU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avaImage" destination="UVW-bY-F3C" id="TL0-wY-zVV"/>
+                        <outlet property="mostLikedPhoto" destination="O3R-Tx-vj0" id="6zo-J2-4en"/>
+                        <outlet property="numLikes" destination="Hek-Tx-9yu" id="2sS-0t-dw2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="getAva:"/>
+                <relationship kind="action" name="getMostLikedPhoto:"/>
+                <relationship kind="action" name="login:"/>
+                <relationship kind="outlet" name="avaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mostLikedPhoto" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="numLikes" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
